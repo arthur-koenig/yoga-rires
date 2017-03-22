@@ -1,0 +1,25 @@
+url:
+baseurl:
+
+# Site settings
+title: Rires Éveillés
+email: contact@yoga-rires.fr
+description: "Le yoga du rire éveillé"
+
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: facebook
+    url: https://www.facebook.com/yogarireseveilles/
+
+collections:
+  evenements:
+    title: evenements
+    output: false
+  prochainements:
+    title: prochainements
+    output: false
+
+# Build settings
+markdown: kramdown
+permalink: pretty
