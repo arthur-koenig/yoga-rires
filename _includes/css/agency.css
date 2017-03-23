@@ -329,7 +329,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 90px 0 10px 0;
+    padding: 60px 0 50px 0;
 }
 
 h2.section-heading {
@@ -353,7 +353,7 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 110px 0 80px 0;
+        padding: 100px 0 80px 0;
     }
 }
 
@@ -666,7 +666,7 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #68b4c1;
+    background-color: #{{ site.data.template.color.third }};
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -739,6 +739,11 @@ footer span.copyright {
     text-transform: none;
     line-height: 40px;
 }
+@media (max-width: 768px){
+  ul.social-buttons {
+      margin: 20px 0 20px 0;
+  }
+}
 
 footer ul.quicklinks {
     margin-bottom: 0;
@@ -747,9 +752,6 @@ footer ul.quicklinks {
     line-height: 40px;
 }
 
-ul.social-buttons {
-    margin-bottom: 0;
-}
 
 ul.social-buttons li a {
     display: block;
@@ -886,7 +888,7 @@ body {
   color: white;
 }
 .color-event p {
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
 }
 .color-event i {
   font-size: 30px;
@@ -1011,7 +1013,7 @@ font-size: 34px;
   }
 
   .white{
-    color: white;
+    color: white !important;
   }
   .section-buttons {
   margin-top: 20px;
@@ -1039,7 +1041,7 @@ font-size: 34px;
       cursor: pointer;
   }
 .btn-info {
-  background-color: #68B4C1;
+  background-color: #{{ site.data.template.color.third }};
   font-weight: 700;
   text-transform: uppercase;
   border: none;

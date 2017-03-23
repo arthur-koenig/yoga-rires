@@ -2,22 +2,26 @@
 layout: default
 header-img: /img/header-bg2.jpg
 title: vous allez rire !
+description: Le yoga du rire, éveillé ! Des cours de yoga du rire à Paris, des ateliers de yoga du rire pour les entreprises, des événements autour du yoga du rire... vous allez rire !
 ---
 
 <!-- Services Section -->
-    <section id="services">
+
         <div class="container container-small">
             <div class="text-center">
-                <h2 class="section-heading">Bienvenue au Yoga du rire</h2><br><br><br>
+              <section >
+                <h2 class="section-heading">Bienvenue au Yoga du rire</h2>
+              </section>
 
 
-                <h3 class="section-subheading text-muted">
-                  L’association d’une respiration yogique avec la libération du rire. Une technique puissante pour muscler le positif en soi et développer son calme et son énergie.<br><br>
-                  <b>Rires Éveillés</b> propose des cours et organise des événements autour du yoga du rire : des cours dans lesquels les participants libèrent leur rire dans un cadre bienveillant et ludique; des respirations toniques qui permettent de renouveler l’air dans les poumons et de fortifier le système immunitaire; un vrai sport : l’activation de plusieurs centaines de muscles constitue un véritable « jogging stationnaire » et permet un massage en douceur des organes.
+                <p class="text-muted text-justify">
+                  <i><b>L’association d’une respiration yogique avec la libération du rire. Une technique puissante pour muscler le positif en soi et développer son calme et son énergie.</b><br><br>
+                  <b>Rires Éveillés</b> propose des cours et organise des événements autour du yoga du rire : des cours dans lesquels les participants libèrent leur rire dans un cadre bienveillant et ludique; des respirations toniques qui permettent de renouveler l’air dans les poumons et de fortifier le système immunitaire; un vrai sport : l’activation de plusieurs centaines de muscles constitue un véritable « jogging stationnaire » et permet un massage en douceur des organes.</i></p>
+                  <br><br>
             </div>
         </div>
 
-        <div class="color-event-small" style="background-color: #e25b4e">
+        <div class="color-event-small" style="background-color: #f55e4f">
             <div class="container container-small">
 
               <div class="row">
@@ -26,7 +30,7 @@ title: vous allez rire !
                 </div>
 
                  <div class="col-md-8 "><br>
-                   <p class="text-justify white"><b>Rire sans raison ne fait pas partie de nos habitudes. Pas toujours facile de se lâcher quand notre culture nous incite à montrer du contrôle, de la maîtrise, de la logique, de la raison. Une séance de yoga du rire est un rafraichissement délicieux pour le cerveau, le cœur et le corps. Pratiquée régulièrement, cette technique simple et puissante permet d’installer un bien être profond et durable. </b><br><br>
+                   <p class="text-justify white">Rire sans raison ne fait pas partie de nos habitudes. Pas toujours facile de se lâcher quand notre culture nous incite à montrer du contrôle, de la maîtrise, de la logique, de la raison. Une séance de yoga du rire est un <b>rafraichissement délicieux pour le cerveau</b>, le cœur et le corps. Pratiquée régulièrement, cette technique simple et puissante permet d’installer un bien être profond et durable. <br><br>
                      <a href="#"><button type="button" class="btn btn-primary btn-md btn-fill">En savoir plus</button></a>
 
 
@@ -39,7 +43,7 @@ title: vous allez rire !
             </div>
 
 
-        <div class="color-event-small" style="background-color: #3EB7A1">
+        <div class="color-event-small" style="background-color: #44ceb5">
           <div class="container container-small">
             <div class="row">
 
@@ -47,7 +51,7 @@ title: vous allez rire !
                  <a href="{{site.baseurl}}/entreprises">Entreprises</a>
               </div>
                <div class="col-md-8"><br>
-                 <p class="text-justify white"> <b> Associer le sérieux et les contraintes de l’entreprise à la légèreté du rire, est-ce bien… raisonnable ? Oui, et le yoga du rire trouve aujourd’hui un écho de plus en plus favorable dans le monde du travail, car il y a fait ses preuves. Les effets bénéfiques d’une seule séance sont immédiatement ressentis par les participants et une pratique régulière a un impact positif et durable sur leur bien-être et leurs performances.</b><br><br>
+                 <p class="text-justify white" > Associer le sérieux et les contraintes de l’entreprise à la légèreté du rire, est-ce bien… raisonnable ? Oui, et le yoga du rire trouve aujourd’hui un écho de plus en plus favorable dans le monde du travail, car il y a fait ses preuves. Les effets bénéfiques d’une seule séance sont <b>immédiatement ressentis par les participants</b> et une pratique régulière a un impact positif et durable sur leur bien-être et leurs performances.<br><br>
                    <a href="#"><button type="button" class="btn btn-primary btn-md btn-fill">En savoir plus</button></a>
                </div>
 
@@ -89,13 +93,10 @@ title: vous allez rire !
  -->
 
 
-    </section>
 
-
-
-      <section style="margin-top: -60px;">
+      <section>
         <div class="container text-center">
-            <h2 class="section-heading">En ce moment</h2><br>
+            <h2 class="section-heading">En ce moment</h2>
         </div>
       </section>
       {% assign evenements = site.evenements %}
@@ -112,7 +113,7 @@ title: vous allez rire !
                       {% if evenement.prix-libre == true %}
                       <p> <b>Participation libre </b></p>
                       {% else %}
-                      <a href="#" data-toggle="tooltip" data-html="true" data-placement="top" class="tooltip-link" title="{% for item in evenement.prix-options %}
+                      <a href="#" class="white" data-toggle="tooltip" data-html="true" data-placement="top" class="tooltip-link" title="{% for item in evenement.prix-options %}
                       <p>{{item}}</p>
                       {% endfor %}"><b>Voir les tarifs</b></a>
                       <!-- {% for item in evenement.prix-options %}
@@ -159,7 +160,7 @@ title: vous allez rire !
 
       <section>
           <div class="container text-center">
-              <h2 class="section-heading">Prochains événements</h2><br>
+              <h2 class="section-heading">Prochains événements</h2>
           </div>
       </section>
       {% assign prochainements = site.prochainements %}
