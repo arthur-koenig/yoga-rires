@@ -12,6 +12,7 @@ body {
     -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    font-size: 18px;
+   width: 100%;
 }
 
 .text-muted {
@@ -993,52 +994,59 @@ font-size: 34px;
   .btn-prochainement {
   margin-left: 140px;
     }
-  }
-  .btn-facebook {
-    background-color: #3B5998;
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    opacity: 1;
-  }
-  .btn-facebook:hover {
-    opacity: 0.9;
-  }
+}
+.btn-facebook {
+  background-color: #3B5998;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 1;
+}
+.btn-facebook:hover {
+  opacity: 0.9;
+}
 
-  .color-event-small {
-    min-height: 300px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    position: relative;
-  }
+.color-event-small {
+  min-height: 300px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+@media (min-width: 768px){
+.color-event-small h1 {
+  margin-left: 15px;
+}
+}
 
-  .white{
-    color: white !important;
-  }
+.white{
+  color: white !important;
+}
+.dark {
+  color: #{{site.data.template.color.secondary-dark}} !important;
+}
+.section-buttons {
+
+  transition: all 0.2s ease;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color:  rgba(255,255,255,0.15);
+  color: white;
+  font-size: 35px;
+  padding: 20px 0 20px 20px;
+  width: 92%;
+  float: right;
+  margin-bottom: 20px;
+}
+.section-buttons:hover{
+    background-color: rgba(255,255,255,0.25);
+    cursor: pointer;
+}
+@media (min-width: 992px){
   .section-buttons {
-  margin-top: 20px;
-  }
-  @media (min-width: 992px){
-    .section-buttons {
-      visibility: visible;
-      position: absolute;
-      top: 70px;
-      right: -20px;
-      border-radius: 3px;
-      }
+  margin-top:30px;
+  margin-bottom: 0;
+  width: 34vw;
     }
-    .section-buttons a {
-      background-color:  rgba(255,255,255,0.2);
-      color: white;
-      font-size: 35px;
-      padding: 20px 800px 20px 20px;
-      transition: all 0.2s ease;
-      border-radius: 3px;
-      margin-top: 90px;
-    }
-  .section-buttons a:hover{
-      background-color: rgba(255,255,255,0.4);
-      cursor: pointer;
   }
 .btn-info {
   background-color: #{{ site.data.template.color.third }};
@@ -1062,4 +1070,15 @@ font-size: 34px;
 blockquote {
   margin: 30px 0;
   border-left: 5px solid #ffb64a
+}
+.btn-slick {
+  border: 1px solid white;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+  font-family: #{{ site.data.template.font.primary }};
+}
+.btn-slick:hover {
+  background-color: rgba(255,255,255,0.3);;
 }
