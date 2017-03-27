@@ -1,8 +1,9 @@
-<form enctype="multipart/form-data" action="http://mailthis.to/yoga-rires" method="post">
+<form action="https://script.google.com/macros/s/AKfycbxCYr6jxLFQQiAFuUMo98W0Wk4jNqL_bMgHu9q7-_ne3ad7Gfa1/exec" method="post">
+
 
  <fieldset class="form-group">
    <label>Nom*</label>
-   <input type="text" class="form-control" placeholder="Prénom et nom de famille" name="name" required oninvalid="this.setCustomValidity('Merci de préciser votre nom')" oninput="setCustomValidity('')">
+   <input type="text" class="form-control" placeholder="Prénom et nom de famille" name="nom" required oninvalid="this.setCustomValidity('Merci de préciser votre nom')" oninput="setCustomValidity('')">
  </fieldset>
 
  <fieldset class="form-group">
@@ -14,14 +15,17 @@
 
  <fieldset class="form-group">
    <label for="exampleTextarea">Commentaires</label>
-   <textarea class="form-control" id="exampleTextarea" rows="5" name="message"></textarea>
+   <textarea class="form-control" rows="5" name="message"></textarea>
  </fieldset>
 
  <input type="hidden" name="_replyto" value="%email">
  <!--  <input type="hidden" name="_after" value="http://yoga-rires.fr/reservation/">-->
  <input type="hidden" name="_subject" value="Réservation via yoga-rires.fr">
-   <input type="text" name="_honey" value="" style="display:none">
-
  <button type="submit" class="btn btn-primary btn-fill" value="Send">Inscription</button>
 
 </form>
+
+<div style= "display:none;" id="thankyou_message" class="text-center">
+  <h2>Vous voulez rire !</h2><br>
+    Votre demande de réservation a bien été effectuée. Merci !
+</div>

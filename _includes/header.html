@@ -37,7 +37,7 @@
 
     <!-- Header -->
     {% if page.background-color %}
-    <header style="background-color: #{{page.background-color}} ">
+    <header style="background: #{{page.background-color}} center center no-repeat;">
         <div class="container">
             <div class="intro-text">
                 <div class="intro-heading">{{page.title}}</div>
@@ -49,7 +49,22 @@
             </div>
         </div>
     </header>
-    {% else %}
+    {% endif %}
+    {% if page.homepage %}
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">{{page.title}}</div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </header>
+    {% endif %}
+    {% if page.header-img %}
     <header style="background: linear-gradient(to bottom, rgba(0,0,0, 0.1), rgba(0,0,0, 0.1)), url({{ page.header-img }}) center center no-repeat; background-size: cover ; ">
         <div class="container">
             <div class="intro-text">
@@ -63,6 +78,7 @@
         </div>
     </header>
     {% endif %}
+
 <!--
         {% for page in site.pages %}
           {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}

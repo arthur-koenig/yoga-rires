@@ -4,5 +4,5 @@ title: Week-end Créativité et Bonheur
 infos: Co-Animation avec Geneviève Savatier, sculptrice et art-thérapeute
 adresse: Genève
 dates: Vendredi 30 juin et samedi 1er juillet
-booking: true
+booking: false
 ---

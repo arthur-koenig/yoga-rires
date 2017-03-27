@@ -12,4 +12,6 @@ font:
   secondary: 'Nunito, "Helvetica Neue", Helvetica,Arial,sans-serif'
 
 header:
-  img: img/header-bg2.jpg
+  img: /img/header-lg.jpg
+  img-medium: /img/header-md.jpg
+  img-small: /img/header-sm.jpg
