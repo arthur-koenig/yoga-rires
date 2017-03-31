@@ -3,6 +3,8 @@ color:
   primary: FFB64A
   secondary: EDA843
   third: 67CCDD
+  fourth: DE3D68
+  fourth-dark: c1345a
   secondary-dark: 333
   muted: 666
 

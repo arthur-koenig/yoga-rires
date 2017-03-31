@@ -55,7 +55,7 @@ function handleFormSubmit(event) {
     document.getElementById('email-invalid').style.display = 'block';
     return false;
   } else {
-    $(".sendbtn").css('opacity', '0.5'); // change submit button opacity on submit
+    $(".sendbtn").css('opacity', '0'); // change submit button opacity on submit
     $('.loader').show(); // show loading effect while submitting
     var url = event.target.action;  //
     var xhr = new XMLHttpRequest();
@@ -87,7 +87,7 @@ function handleFormSubmit(event) {
 function loaded() {
 //  console.log('contact form submission handler loaded successfully');
   // bind to the submit event of our form
-  var forms = document.getElementsByClassName('gform');
+  var forms = $('.gform');
   console.log('forms');
   $('.gform').each(function( index ) {
   //   $( this ).addEventListener("submit", handleFormSubmit, false);
