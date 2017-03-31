@@ -1092,4 +1092,14 @@ blockquote {
 }
 .close {
   color: #222;
+  opacity: 0.5;
+}
+.close:hover {
+  color: #222;
+  opacity: 0.9;
+}
+.submitconf {
+  margin-top: 20px;
+}#thankyou_message h1 {
+  color: #FFB64A ;
 }

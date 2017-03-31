@@ -1,45 +1,44 @@
-<!-- https://www.briskforms.com/go/f496e3adeff6627094b70a27506c3d19 -->
+<form action="https://script.google.com/macros/s/AKfycbxCYr6jxLFQQiAFuUMo98W0Wk4jNqL_bMgHu9q7-_ne3ad7Gfa1/exec" method="post" class="gform resa" id={{evenement.title | replace: " ","-"}}>
+
+     <fieldset class="form-group">
+       <label>Nom*</label>
+       <input type="text" class="form-control" placeholder="Prénom et nom de famille" name="nom" required oninvalid="this.setCustomValidity('Merci de préciser votre nom')" oninput="setCustomValidity('')">
+     </fieldset>
+
+     <fieldset class="form-group">
+       <label>Adresse email*</label>
+       <input type="email" class="form-control" placeholder="exemple@mail.com" name="email" required oninvalid="this.setCustomValidity('Merci de préciser votre email')" oninput="setCustomValidity('')">
+     </fieldset>
+
+    {% if evenement.prix-libre == true %}
+    <p class="form-info">Participation libre (prix libre). Paiement sur place uniquement.</p>
+    {% else %}
+     <fieldset class="form-group">
+       <label for="exampleSelect1">Choisissez une option</label>
+       <p class="form-info">À titre indicatif seulement, <b>sans engagement</b>. Paiements sur place uniquement.</p>
+       <select class="form-control" name="option">
+         {% for item in evenement.prix-options %}
+          <option>{{item}}</option>
+         {% endfor %}
+       </select>
+     </fieldset>
+     {% endif %}
 
 
-<form action="https://script.google.com/macros/s/AKfycbxCYr6jxLFQQiAFuUMo98W0Wk4jNqL_bMgHu9q7-_ne3ad7Gfa1/exec" method="post" class="gform" id={{evenement.title | replace: " ","-"}}>
+    <br>
 
- <fieldset class="form-group">
-   <label>Nom*</label>
-   <input type="text" class="form-control" placeholder="Prénom et nom de famille" name="nom" required oninvalid="this.setCustomValidity('Merci de préciser votre nom')" oninput="setCustomValidity('')">
- </fieldset>
-
- <fieldset class="form-group">
-   <label>Adresse email*</label>
-   <input type="email" class="form-control" placeholder="exemple@mail.com" name="email" required oninvalid="this.setCustomValidity('Merci de préciser votre email')" oninput="setCustomValidity('')">
- </fieldset>
-
-{% if evenement.prix-libre == true %}
-<p class="form-info">Participation libre (prix libre). Paiement sur place uniquement.</p>
-{% else %}
- <fieldset class="form-group">
-   <label for="exampleSelect1">Choisissez une option</label>
-   <p class="form-info">À titre indicatif seulement, <b>sans engagement</b>. Paiements sur place uniquement.</p>
-   <select class="form-control" name="option">
-     {% for item in evenement.prix-options %}
-      <option>{{item}}</option>
-     {% endfor %}
-   </select>
- </fieldset>
- {% endif %}
+     <fieldset class="form-group">
+       <label >Commentaires</label>
+       <textarea class="form-control" rows="5" name="message"></textarea>
+     </fieldset>
 
 
-<br>
-
- <fieldset class="form-group">
-   <label >Commentaires</label>
-   <textarea class="form-control" rows="5" name="message"></textarea>
- </fieldset>
-
-
- <button type="submit" class="btn btn-primary btn-fill" value="Send">Réserver</button>
+     <button type="submit" class="btn btn-primary btn-fill sendbtn" value="Send">Réserver</button>
+     <div class="loader"></div>
 
 </form>
+
   <div style= "display:none;" id="thankyou_message" class="text-center">
-    <h2>Vous voulez rire !</h2><br>
+    <h1>Vous voulez rire !</h1><br>
       Votre demande de réservation a bien été effectuée. Merci !
   </div>

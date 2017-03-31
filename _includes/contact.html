@@ -6,7 +6,6 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 class="section-heading">Contactez-nous</h2>
-
                         <a href="contact@yoga-rires.fr" class="white"><b>contact@yoga-rires.fr</b></a>
                           <br>
                           <br>
@@ -16,39 +15,39 @@
 
                 <div class="row">
                   <div class="col-lg-12">
-                      <form name="sentMessage" id="contactForm" class="gform" action="https://script.google.com/macros/s/AKfycbxCYr6jxLFQQiAFuUMo98W0Wk4jNqL_bMgHu9q7-_ne3ad7Gfa1/exec" novalidate method="post">
+
+                      <form action="https://script.google.com/macros/s/AKfycbxCYr6jxLFQQiAFuUMo98W0Wk4jNqL_bMgHu9q7-_ne3ad7Gfa1/exec" method="post" class="gform" id="contactForm">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="control-group form-group">
-                                    <input type="text" class="form-control" placeholder="Votre nom *" id="name" name="nom" required data-validation-required-message="Merci d'écrire votre nom">
+                                  <input type="text" class="form-control" placeholder="Nom" name="nom" required oninvalid="this.setCustomValidity('Merci de préciser votre nom')" oninput="setCustomValidity('')">
                                     <p class="help-block text-danger"></p>
                                 </div>
+
                                 <div class="control-group form-group">
-                                    <input type="email" class="form-control" placeholder="Votre adresse email *" id="email" name="email" required data-validation-required-message="Merci d'entrer votre adresse e-mail">
+                                  <input type="text" class="form-control" placeholder="Email" name="email" required oninvalid="this.setCustomValidity('Merci de préciser votre adresse email')" oninput="setCustomValidity('')">
                                     <p class="help-block text-danger"></p>
                                 </div>
 
                             </div>
                             <div class="col-md-6">
                                 <div class="control-group form-group">
-                                    <textarea class="form-control" placeholder="Votre message *" id="message" name="message" required data-validation-required-message="Écrivez votre message ici"></textarea>
+                                    <textarea class="form-control" placeholder="Votre message" name="message" required oninvalid="this.setCustomValidity('Écrivez votre message ici')" oninput="setCustomValidity('')"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
-                                <div id="success"></div>
 
-                                <!-- <input type="hidden" name="_replyto" value="%email" id="_replyto">
-                                <input type="hidden" name="_subject" value="Message yoga-rires" id="_subject">
-                                <input type="text" name="_honey" value="" style="display:none"> -->
-                                <button type="submit" class="btn btn-xl" value="Send">Envoyer</button>
+                                <button type="submit" class="btn btn-xl sendbtn" value="Send">Envoyer</button>
+                                <div class="loader"></div>
+
                             </div>
                         </div>
                       </form>
-                    <div style= "display:none;" class='alert alert-success text-center'>
+                    <div style= "display:none;" class='submitconf alert alert-success text-center'>
                       <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <strong>Votre message a bien été envoyé. </strong>
+                        <strong>Merci, votre message a bien été envoyé ! </strong>
                     </div>
 
                   </div>

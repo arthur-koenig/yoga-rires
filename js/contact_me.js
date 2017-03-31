@@ -12,8 +12,6 @@ $(function() {
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#email").val();
-            var _replyto = $("input#_replyto").val();
-            var _subject = $("input#_subject").val();
             var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
@@ -21,15 +19,12 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "http://mailthis.to/yoga-rires",
+                url: "https://script.google.com/macros/s/AKfycbxCYr6jxLFQQiAFuUMo98W0Wk4jNqL_bMgHu9q7-_ne3ad7Gfa1/exec",
                 type: "POST",
                 data: {
                     name: name,
                     email: email,
                     message: message,
-                    _subject: _subject,
-                    _replyto: _replyto
-
                 },
                 cache: false,
                 success: function() {
@@ -38,7 +33,7 @@ $(function() {
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>Votre message a bien été envoyé. </strong>");
+                        .append("<strong>Merci " + firstName + ", Votre message a bien été envoyé. </strong>");
                     $('#success > .alert-success')
                         .append('</div>');
 

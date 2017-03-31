@@ -1,27 +1,27 @@
-<form action="https://script.google.com/macros/s/AKfycbxCYr6jxLFQQiAFuUMo98W0Wk4jNqL_bMgHu9q7-_ne3ad7Gfa1/exec" method="post">
+<form action="https://script.google.com/macros/s/AKfycbxCYr6jxLFQQiAFuUMo98W0Wk4jNqL_bMgHu9q7-_ne3ad7Gfa1/exec" method="post" class="gform resa" id={{prochainement.title | replace: " ","-"}}>>
 
+     <fieldset class="form-group">
+       <label>Nom*</label>
+       <input type="text" class="form-control" placeholder="Prénom et nom de famille" name="nom" required oninvalid="this.setCustomValidity('Merci de préciser votre nom')" oninput="setCustomValidity('')">
+     </fieldset>
 
- <fieldset class="form-group">
-   <label>Nom*</label>
-   <input type="text" class="form-control" placeholder="Prénom et nom de famille" name="nom" required oninvalid="this.setCustomValidity('Merci de préciser votre nom')" oninput="setCustomValidity('')">
- </fieldset>
+     <fieldset class="form-group">
+       <label>Adresse email*</label>
+       <input type="email" class="form-control" placeholder="exemple@mail.com" name="email" required oninvalid="this.setCustomValidity('Merci de préciser votre email')" oninput="setCustomValidity('')">
+     </fieldset>
 
- <fieldset class="form-group">
-   <label>Adresse email*</label>
-   <input type="email" class="form-control" placeholder="exemple@mail.com" name="email" required oninvalid="this.setCustomValidity('Merci de préciser votre email')" oninput="setCustomValidity('')">
- </fieldset>
+    <br>
 
-<br>
+     <fieldset class="form-group">
+       <label for="exampleTextarea">Commentaires</label>
+       <textarea class="form-control" rows="5" name="message"></textarea>
+     </fieldset>
 
- <fieldset class="form-group">
-   <label for="exampleTextarea">Commentaires</label>
-   <textarea class="form-control" rows="5" name="message"></textarea>
- </fieldset>
-
- <input type="hidden" name="_replyto" value="%email">
- <!--  <input type="hidden" name="_after" value="http://yoga-rires.fr/reservation/">-->
- <input type="hidden" name="_subject" value="Réservation via yoga-rires.fr">
- <button type="submit" class="btn btn-primary btn-fill" value="Send">Inscription</button>
+     <input type="hidden" name="_replyto" value="%email">
+     <!--  <input type="hidden" name="_after" value="http://yoga-rires.fr/reservation/">-->
+     <input type="hidden" name="_subject" value="Réservation via yoga-rires.fr">
+     <button type="submit" class="btn btn-primary btn-fill sendbtn" value="Send">Inscription</button>
+     <div class="loader"></div>
 
 </form>
 

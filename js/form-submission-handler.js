@@ -1,3 +1,7 @@
+function main(){
+ $(".loader").hide();
+ };
+$(document).ready(main);
 
 function validEmail(email) { // see:
   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
@@ -51,6 +55,8 @@ function handleFormSubmit(event) {
     document.getElementById('email-invalid').style.display = 'block';
     return false;
   } else {
+    $(".sendbtn").css('opacity', '0.5'); // change submit button opacity on submit
+    $('.loader').show(); // show loading effect while submitting
     var url = event.target.action;  //
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
@@ -60,8 +66,14 @@ function handleFormSubmit(event) {
     //    console.log( xhr.status, xhr.statusText )
     //    console.log(xhr.responseText);
     //    document.getElementByClassName('gform').style.display = 'none'; // hide form
-        event.target.style.display = 'none';
+        $(".loader").hide(); // re-hide loading effect after submit
+        $(".sendbtn").css('opacity', '1'); // re-put full opacity to send button after submit
+        if( $(event.target).hasClass('resa')) event.target.style.display = 'none';
+      //
     //    document.getElementById('thankyou_message').style.display = 'block';
+        $( '.gform' ).each(function(){
+        this.reset();
+        });
         event.target.nextElementSibling.style.display = 'block';
         return;
     };
@@ -87,4 +99,7 @@ function loaded() {
 });
 //  forms.addEventListener("submit", handleFormSubmit, false);
 };
+
+
+
 document.addEventListener('DOMContentLoaded', loaded, false);
