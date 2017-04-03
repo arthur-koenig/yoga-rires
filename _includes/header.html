@@ -1,4 +1,4 @@
-    <nav class="navbar navbar-default navbar-static-top {% if page.blog %} navbar-blog {% endif %}">
+<nav class="navbar navbar-default {% if page.blog %} navbar-fixed-top navbar-blog nav-down {% else %} navbar-static-top {% endif %} ">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -27,9 +27,9 @@
                     <li>
                         <a  href="#contact"><b>Contact</b></a>
                     </li>
-                    <!-- <li>
-                        <a  href="{{site.baseurl}}/blog"><b>Blog</b></a>
-                    </li> -->
+                    <li>
+                      <a class=" btn-blog" href="{{site.baseurl}}/blog"><div class="btn btn-info">Blog</div> </a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

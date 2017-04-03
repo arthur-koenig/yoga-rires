@@ -1,13 +1,34 @@
  <!-- jQuery Version 1.11.0 -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
-    <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
 
     <!-- Contact Form JavaScript -->
+    <!--  <script src="{{ "/js/navbar.js" | prepend: site.baseurl }}"></script>-->
     <script src="{{ "/js/form-submission-handler.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/headroom.js" | prepend: site.baseurl }}"></script>
+    {% if page.blog-home %}
+    <script src="{{ "/js/jekyll-search.min.js" | prepend: site.baseurl }}"></script>
+    <!--  Jekyll Search -->
+    <script type="text/javascript">
+          SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container'),
+            json: '/search.json',
+            searchResultTemplate: '<a href="{url}" title="{desc}"><li class="search-result">{title}</li></a>',
+            noResultsText: 'Aucun article trouvé',
+            limit: 10,
+            fuzzy: true,
+          })
+    </script>
+    <!--  End of Jekyll Search -->
+    {% endif %}
+
+    <!-- <script>$(".navbar-fixed-top").autoHidingNavbar({
+    // see next for specifications
+    });</script> -->
+
     <script>
       $(function () {
       $('[data-toggle="tooltip"]').tooltip()

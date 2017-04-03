@@ -13,13 +13,47 @@ social:
     url: https://www.facebook.com/yogarireseveilles/
 
 collections:
+  cours:
+    title: cours
+    output: false
   evenements:
     title: evenements
     output: false
-  prochainements:
-    title: prochainements
-    output: false
+
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    blog: true
+    title: ''
+    description: ''
+    img: ''
+    comments: ''
+- scope:
+    path: ''
+    type: cours
+  values:
+    title: ''
+    background-color: ''
+    adresse: ''
+    moment: ''
+    booking: ''
+    prix-libre: ''
+- scope:
+    path: ''
+    type: evenements
+  values:
+    title: ''
+    background-color: ''
+    infos: ''
+    adresse: ''
+    moment: ''
+    lien: ''
+    booking: ''
+
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: "/blog/:title"

@@ -1,10 +1,14 @@
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: FFB64A
-  secondary: EDA843
+  primary: FB8C00
+  primary-clear: fc9619
   third: 67CCDD
+  third-clear: 6ad7e8
   fourth: DE3D68
+  fourth-clear: ed406e
   fourth-dark: c1345a
+  fifth: 40c3bd
+  fifth-clear: 44cec7
   secondary-dark: 333
   muted: 666
 
@@ -12,8 +16,13 @@ color:
 font:
   primary: ' Cabin Sketch, "Helvetica Neue",Helvetica,Arial,sans-serif'
   secondary: 'Nunito, "Helvetica Neue", Helvetica,Arial,sans-serif'
+  third: '"Crimson Text", "Helvetica Neue"'
 
 header:
   img: /img/header-lg.jpg
   img-medium: /img/header-md.jpg
   img-small: /img/header-sm.jpg
+
+scale:
+  properties: '-moz-transform: scale(1.02); -webkit-transform: scale(1.02); transform: scale(1.02);'
+  properties-text: '-moz-transform: scale(1.06); -webkit-transform: scale(1.06); transform: scale(1.06);'

@@ -3,7 +3,6 @@
   <a href="{{site.baseurl}}{{post.url}}">
 
     <!-- Post image -->
-
     <div class="col-sm-4">
       <div class="image-post" style="background: url({{site.baseurl}}/{{ post.img }}) center no-repeat; background-size: cover ; "></div>
     </div>
@@ -19,6 +18,7 @@
 
         <div class="row details">
             <div class="col-xs-6">
+              <div class="post-date">{% include page-date.html %}</div>
             </div>
             <div class="col-xs-6">
               <div class="sharer">
@@ -28,7 +28,7 @@
                         <button class="btn btn-slick-media btn-sm">
                           <ul class="list-unstyled list-inline">
                             <li>
-                              <a href="https://twitter.com/intent/tweet?text={{ post.title }}&url={{ site.url }}{{ post.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter" class="btn-media twitter">
+                              <a href="https://twitter.com/intent/tweet?text={{ post.title }}&url={{ site.url }}{{ post.url }}" rel="nofollow" target="_blank" title="Share on Twitter" class="btn-media twitter">
                               <i class="fa fa-twitter-square fa-2x"></i></a>
                             </li>
                             <li>

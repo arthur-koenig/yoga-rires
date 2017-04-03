@@ -1,4 +1,4 @@
-<form action="https://script.google.com/macros/s/AKfycbxCYr6jxLFQQiAFuUMo98W0Wk4jNqL_bMgHu9q7-_ne3ad7Gfa1/exec" method="post" class="gform resa" id={{evenement.title | replace: " ","-"}}>
+<form action="https://script.google.com/macros/s/AKfycbxCYr6jxLFQQiAFuUMo98W0Wk4jNqL_bMgHu9q7-_ne3ad7Gfa1/exec" method="post" class="gform resa" id={{cour.title | replace: " ","-"}}>
 
      <fieldset class="form-group">
        <label>Nom*</label>
@@ -10,14 +10,14 @@
        <input type="email" class="form-control" placeholder="exemple@mail.com" name="email" required oninvalid="this.setCustomValidity('Merci de préciser votre email')" oninput="setCustomValidity('')">
      </fieldset>
 
-    {% if evenement.prix-libre == true %}
+    {% if cour.prix-libre == true %}
     <p class="form-info">Participation libre (prix libre). Paiement sur place uniquement.</p>
     {% else %}
      <fieldset class="form-group">
        <label for="exampleSelect1">Choisissez une option</label>
        <p class="form-info">À titre indicatif seulement, <b>sans engagement</b>. Paiements sur place uniquement.</p>
        <select class="form-control" name="option">
-         {% for item in evenement.prix-options %}
+         {% for item in cour.prix-options %}
           <option>{{item}}</option>
          {% endfor %}
        </select>
@@ -33,7 +33,7 @@
      </fieldset>
 
 
-     <button type="submit" class="btn btn-primary btn-fill sendbtn" value="Send">Réserver</button>
+     <button type="submit" class="btn btn-info btn-fill sendbtn" value="Send">Réserver</button>
      <div class="loader"></div>
 
 </form>

@@ -4,7 +4,7 @@
   {% include head.html %}
 
 
-    <body id="page-top" class="index">
+    <body {% if page.blog-home %} style="margin-top:150px" {% endif %}>
 
     {% include header.html %}
     {{ content }}

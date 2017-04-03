@@ -100,28 +100,28 @@ description: Le yoga du rire, éveillé ! Des cours de yoga du rire à Paris, de
             <h2 class="section-heading">En ce moment</h2>
         </div>
       </section>
-      {% assign evenements = site.evenements %}
-      {% for evenement in evenements %}
-       <div class="color-event" style ="background-color: #{{evenement.background-color}}">
+      {% assign cours = site.cours %}
+      {% for cour in cours %}
+       <div class="color-event" style ="background-color: #{{cour.background-color}}">
 
 
 
-              {% if evenement.booking == true %}
+              {% if cour.booking == true %}
 
-              <a data-toggle="modal" data-target=".{{evenement.title | replace: " ","-"}}">
+              <a data-toggle="modal" data-target=".{{cour.title | replace: " ","-"}}">
                 <div class=" hidden-sm hidden-xs section-buttons">
                    Réserver
                 </div>
               </a>
 
-                <div class="{{evenement.title | replace: " ","-"}} modal fade" tabindex="-1" role="dialog">
+                <div class="{{cour.title | replace: " ","-"}} modal fade" tabindex="-1" role="dialog">
                   <div class="modal-dialog">
 
                     <!-- Modal content-->
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Réservation prochain {{evenement.title}}</h4>
+                        <h4 class="modal-title">Réservation prochain {{cour.title}}</h4>
                       </div>
                       <div class="modal-body">
                        {% include form.html %}
@@ -138,21 +138,21 @@ description: Le yoga du rire, éveillé ! Des cours de yoga du rire à Paris, de
 
               <div class="container container-small">
                   <div class="col-md-8">
-                      <h1>{{evenement.title}}</h1>
-                      <p><b> {{evenement.adresse}}</b></p>
-                      <p><b> {{evenement.dates}}</b></p>
-                      {% if evenement.prix-libre == true %}
+                      <h1>{{cour.title}}</h1>
+                      <p><b> {{cour.adresse}}</b></p>
+                      <p><b> {{cour.moment}}</b></p>
+                      {% if cour.prix-libre == true %}
                       <b>Participation libre </b><br><br>
                       {% else %}
-                      <a href="#" data-toggle="tooltip" data-html="true" data-placement="top" class="dark" title="{% for item in evenement.prix-options %}
+                      <a href="#" data-toggle="tooltip" data-html="true" data-placement="top" class="dark" title="{% for item in cour.prix-options %}
                       <p>{{item}}</p>
                       {% endfor %}"><b>Voir les tarifs</b></a><br><br>
-                      <!-- {% for item in evenement.prix-options %}
+                      <!-- {% for item in cour.prix-options %}
                       <p>{{item}}</p>
                       {% endfor %} -->
                       {% endif %}
-                      {% if evenement.booking == true %}
-                        <button class=" btn btn-slick hidden-md hidden-lg hidden-xl" data-toggle="modal" data-target=".{{evenement.title | replace: " ","-"}}">
+                      {% if cour.booking == true %}
+                        <button class=" btn btn-slick hidden-md hidden-lg hidden-xl" data-toggle="modal" data-target=".{{cour.title | replace: " ","-"}}">
                            Réserver
                         </button>
                       {% endif %}
@@ -169,31 +169,33 @@ description: Le yoga du rire, éveillé ! Des cours de yoga du rire à Paris, de
               <h2 class="section-heading">Prochains événements</h2>
           </div>
       </section>
-      {% assign prochainements = site.prochainements %}
-      {% for prochainement in prochainements %}
-            <div class="prochainement" style ="background-color: #{{prochainement.background-color}}">
+      {% assign evenements = site.evenements %}
+      <ul class="list-unstyled list-evenements">
+      {% for evenement in evenements %}
+      <li>
+            <div class="evenement">
                 <div class="container container-small">
                   <div class="row">
                       <div class="col-md-8">
-                          <h1>{{prochainement.title}}</h1>
-                          <p> {{prochainement.infos}}</p>
-                          <p> {{prochainement.adresse}}</p>
-                          <p> <b>{{prochainement.dates}}</b></p>
+                          <h1>{{evenement.title}}</h1>
+                          <p> {{evenement.infos}}</p>
+                          <p> {{evenement.adresse}}</p>
+                          <p> <b>{{evenement.moment}}</b></p>
                       </div>
                       <div class="col-md-4"><br>
 
-                          {% if prochainement.booking == true %}
+                          {% if evenement.booking == true %}
 
-                              <!-- <a data-toggle="modal" data-target=".{{evenement.background-color}}">Réserver</a> -->
-                              <button type="button" class="btn btn-primary btn-md btn-fill btn-prochainement" data-toggle="modal" data-target=".{{prochainement.title | replace: " ","-"}}">Inscription</button><br><br>
+                              <!-- <a data-toggle="modal" data-target=".{{cour.background-color}}">Réserver</a> -->
+                              <button type="button" class="btn btn-primary btn-md btn-fill btn-evenement" data-toggle="modal" data-target=".{{evenement.title | replace: " ","-"}}">Inscription</button><br><br>
 
 
-                            <div class="{{prochainement.title | replace: " ","-"}} modal fade" tabindex="-1" role="dialog">
+                            <div class="{{evenement.title | replace: " ","-"}} modal fade" tabindex="-1" role="dialog">
                               <div class="modal-dialog">
                                   <div class="modal-content">
                                     <div class="modal-header">
                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                      <h4 class="modal-title">Demande d'inscription {{prochainement.title}}</h4>
+                                      <h4 class="modal-title">Demande d'inscription {{evenement.title}}</h4>
                                     </div>
                                     <div class="modal-body">
                                      {% include form-evenement.html %}
@@ -206,22 +208,26 @@ description: Le yoga du rire, éveillé ! Des cours de yoga du rire à Paris, de
                             </div>
                             {% else %}
                             {% endif %}
-                            {% if prochainement.info == nil or prochainement.info == '' %}
+                            {% if evenement.info == nil or evenement.info == '' %}
                             {% else %}
-                            <a href="{{prochainement.info}}" target="_blank"><button type="button" class="btn btn-info btn-md btn-fill btn-prochainement">Détails</button></a>
+                            <a href="{{evenement.info}}" target="_blank"><button type="button" class="btn btn-info btn-md btn-evenement">Détails</button></a>
                             {% endif %}
                       </div>
                   </div>
               </div>
             </div>
+            </li>
         {% endfor %}
+        </ul>
 
           </div>
 
 
         <section>
-          <div class="container text-center">
+          <div class="container text-center news">
                 <h2 class="section-heading">Toutes les actualités</h2><br>
-                <a href="https://www.facebook.com/yogarireseveilles/" target="_blank"><button type="button" class="btn btn-md btn-fill btn-facebook"> Page Facebook</button></a>
+                <a href="https://www.facebook.com/yogarireseveilles/" target="_blank"><button type="button" class="btn btn-md btn btn-facebook"> Page Facebook</button></a>
+                <a href="https://www.facebook.com/yogarireseveilles/" target="_blank"><button type="button" class="btn btn-md btn-info"> Blog</button></a>
+
           </div>
         </section>
