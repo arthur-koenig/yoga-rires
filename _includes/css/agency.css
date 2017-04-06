@@ -1455,3 +1455,19 @@ nav {
 .list-evenements li:nth-child(odd) {
   background-color: #efefef;
 }
+.btn-lg {
+  border-radius: 3px;
+}
+.day {
+  font-weight: 900;
+}
+.bootstrap-datetimepicker-widget table td.today:before {
+  border-bottom-color: #{{site.data.template.color.fifth}};
+  border-top-color: #{{site.data.template.color.fifth}};
+}
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+  background-color: #{{site.data.template.color.fifth}};
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,14 @@
+<script type="text/javascript">
+$(function () {
+       $('.bootstrap-date-picker').datetimepicker({
+           locale: 'fr',
+           daysOfWeekDisabled: [0,1,2,4,5,6],
+           format: "ll",
+           minDate: moment(),
+           icons: {
+             previous: 'fa fa-chevron-left',
+             next: 'fa fa-chevron-right',
+           }
+       });
+   });
+</script>

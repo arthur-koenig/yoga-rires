@@ -1,0 +1,33 @@
+<script type="text/javascript">
+function getFirstAndThirdWed(year, month){
+    // Convert date to moment (month 0-11)
+    var myMonth = moment({year: year, month: month});
+    // Get first Wednesday of the first week of the month
+    var firstWednesday = myMonth.weekday(2);
+    // Check if first Wednesday is in the given month
+    if( firstWednesday.month() != month ){
+        firstWednesday.add(1, 'weeks');
+    }
+    // Get 3rd Wednesday of the month
+    var third = firstWednesday.clone().add(2, 'weeks');
+    return [firstWednesday, third];
+}
+
+$('.bootstrap-date-picker').datetimepicker({
+  locale: 'fr',
+  useCurrent: false,
+  enabledDates: getFirstAndThirdWed(moment().year(), moment().month()),
+  format: "ll",
+  icons:
+  {
+    previous: 'fa fa-chevron-left',
+    next: 'fa fa-chevron-right',
+  },
+  minDate: moment(),
+}).on("dp.update", function (e) {
+  if( e.viewDate ){
+    var enabledDates = getFirstAndThirdWed(e.viewDate.year(), e.viewDate.month());
+    $('.bootstrap-date-picker').data("DateTimePicker").enabledDates(enabledDates);
+  }
+});
+</script>

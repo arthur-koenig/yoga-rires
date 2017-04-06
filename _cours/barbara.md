@@ -1,8 +1,10 @@
 ---
 background-color: 40c3bd
 title: cours au centre Barbara
+id-name: barbara
 adresse: 1, rue Fleury, 75018 Paris
-moment: Les vendredis de 12:30 à 13:30
+moment: Les vendredis
+heure: de 12:30 à 13:30
 booking: true
 prix-libre: false
 prix-options:

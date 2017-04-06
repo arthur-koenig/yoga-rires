@@ -11,6 +11,8 @@ description: Le yoga du rire, éveillé ! Des cours de yoga du rire à Paris, de
             <div class="text-center">
               <section >
                 <h2 class="section-heading">Bienvenue au Yoga du rire</h2>
+
+
               </section>
 
 
@@ -19,6 +21,7 @@ description: Le yoga du rire, éveillé ! Des cours de yoga du rire à Paris, de
                   <b>Rires Éveillés</b> propose des cours et organise des événements autour du yoga du rire : des cours dans lesquels les participants libèrent leur rire dans un cadre bienveillant et ludique; des respirations toniques qui permettent de renouveler l’air dans les poumons et de fortifier le système immunitaire; un vrai sport : l’activation de plusieurs centaines de muscles constitue un véritable « jogging stationnaire » et permet un massage en douceur des organes.</i></p>
                   <br><br>
             </div>
+
         </div>
 
         <div class="color-event-small" style="background-color: #{{site.data.template.color.fourth}}">
@@ -110,39 +113,39 @@ description: Le yoga du rire, éveillé ! Des cours de yoga du rire à Paris, de
 
               <a data-toggle="modal" data-target=".{{cour.title | replace: " ","-"}}">
                 <div class=" hidden-sm hidden-xs section-buttons">
-                   Réserver
+                   Inscription
                 </div>
               </a>
 
-                <div class="{{cour.title | replace: " ","-"}} modal fade" tabindex="-1" role="dialog">
-                  <div class="modal-dialog">
+              <div class="{{cour.title | replace: " ","-"}} modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
 
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Réservation prochain {{cour.title}}</h4>
-                      </div>
-                      <div class="modal-body">
-                       {% include form.html %}
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-                        </div>
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Réservation {{cour.title}}</h4>
+                    </div>
+                    <div class="modal-body">
+                     {% include form.html %}
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
                       </div>
                     </div>
-
                   </div>
-                  {% else %}
-                  {% endif %}
+
+                </div>
+                {% else %}
+                {% endif %}
 
               <div class="container container-small">
                   <div class="col-md-8">
                       <h1>{{cour.title}}</h1>
                       <p><b> {{cour.adresse}}</b></p>
-                      <p><b> {{cour.moment}}</b></p>
+                      <p><b> {{cour.moment}} {{cour.heure}}</b></p>
                       {% if cour.prix-libre == true %}
-                      <b>Participation libre </b><br><br>
+                      <b>Participation libre</b><br><br>
                       {% else %}
                       <a href="#" data-toggle="tooltip" data-html="true" data-placement="top" class="dark" title="{% for item in cour.prix-options %}
                       <p>{{item}}</p>
@@ -153,7 +156,7 @@ description: Le yoga du rire, éveillé ! Des cours de yoga du rire à Paris, de
                       {% endif %}
                       {% if cour.booking == true %}
                         <button class=" btn btn-slick hidden-md hidden-lg hidden-xl" data-toggle="modal" data-target=".{{cour.title | replace: " ","-"}}">
-                           Réserver
+                           Inscription
                         </button>
                       {% endif %}
                   </div>
@@ -226,8 +229,8 @@ description: Le yoga du rire, éveillé ! Des cours de yoga du rire à Paris, de
         <section>
           <div class="container text-center news">
                 <h2 class="section-heading">Toutes les actualités</h2><br>
-                <a href="https://www.facebook.com/yogarireseveilles/" target="_blank"><button type="button" class="btn btn-md btn btn-facebook"> Page Facebook</button></a>
-                <a href="https://www.facebook.com/yogarireseveilles/" target="_blank"><button type="button" class="btn btn-md btn-info"> Blog</button></a>
+                <a href="https://www.facebook.com/yogarireseveilles/" target="_blank"><button type="button" class="btn btn-md btn-facebook"> Page Facebook</button></a>
+                <a href="{{site.baseurl}}/blog"><button type="button" class="btn btn-md btn-info"> Blog</button></a>
 
           </div>
         </section>
