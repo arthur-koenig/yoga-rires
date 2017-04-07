@@ -1,7 +1,7 @@
 .loader {
   width: 40px;
   height: 40px;
-  background-color: #{{site.data.template.color.fourth}};
+  background-color: #{{site.data.template.color.fifth}};
 
   margin: -53px auto 0 auto;
   -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;

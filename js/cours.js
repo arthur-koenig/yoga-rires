@@ -18,7 +18,7 @@ $('.maison-verte').datetimepicker({
   locale: 'fr',
   useCurrent: false,
   enabledDates: getFirstAndThirdWed(moment().year(), moment().month()),
-  format: "dddd LL",
+  format: "YYYY/MM/DD",
   icons: {
     previous: 'fa fa-chevron-left',
     next: 'fa fa-chevron-right',
@@ -38,7 +38,7 @@ $(function () {
            locale: 'fr',
            useCurrent: false,
            daysOfWeekDisabled: [0,1,2,3,4,6],
-           format: "dddd LL",
+           format: "YYYY/MM/DD",
            minDate: moment(),
            icons: {
              previous: 'fa fa-chevron-left',
