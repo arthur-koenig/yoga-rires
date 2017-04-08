@@ -1,5 +1,5 @@
 ---
-title: Le yoga en entreprise, EST-CE BIEN… RAISONNABLE ?
+title: Le yoga en entreprise, est-ce bien... raisonnable ?
 img: img/team.jpeg
 description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
 
@@ -11,7 +11,7 @@ This is stupid. It’s not even a logistic question. Our platforms just couldn�
 
 ![](/img/yoga1.jpg)
 
-### <span style="font-weight: normal;">Image credit:</span> [Anthony Arrigo](https://www.flickr.com/photos/anthonyfarrigo/3275014857/){:style="font-weight: normal;"}
+### <span style="font-weight: normal;">Image credit: Anthony Arrigo</span>
 
 So I took my pilgrim’s stick and started talking about that issue with people I met in some food-related events. And I realised we were all facing the same issues:
 

@@ -2,7 +2,7 @@
 <html lang="fr">
 
   {% include head.html %}
-    <body style="padding-top:80px">
+    <body style="padding-top:50px">
 
   {% include header.html %}
 
@@ -14,15 +14,15 @@
         </div>
         <div class="jumbotron jumbotron-post" style="background: url({{site.baseurl}}/{{ page.img }}) center no-repeat; background-size: cover ; "></div>
         {% for item in page.img_credit %}
-        {% if item.name == nil or item.name == '' %}{% else %}<h3>Image source: <a href="{{item.url}}" target="_blank">{{item.name}}</a> - <a href= "{{item.license-url}}" target="_blank">{{item.license-name}} license</a></h3>{% endif %}
+        {% if item.name == nil or item.name == '' %}{% else %}<h3>Crédit-image: {{item.name}} {% endif %}
         {% endfor %}
       </div>
 
       <div class="blog container container-post">
         <h2>{{page.description}}</h2><br>
+        <div class="post-date-big">{% include post-date.html %}</div>
       </div>
       <div class="post container container-post">
-        {% include post-date.html %}
                <br>
               <br>
 
