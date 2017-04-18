@@ -2,7 +2,8 @@
 layout: post
 blog: true
 title: Weekend créativité, rire et bonheur
-description: ''
+description: Une grande respiration et quelques tours de magie pour mieux vous préparer
+  à faire de cet été un festival de petits et grands bonheurs.
 img: img/header-lg.jpg
 comments: true
 date: 2017-04-18 17:35
