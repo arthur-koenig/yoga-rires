@@ -6,7 +6,7 @@ moment: Les vendredis
 heure: de 12:30 à 13:30
 heure-google-depart: T123000
 heure-google-fin: T133000
-details: 'Pour toute information supplémentaire, rdv sur yoga-rires.fr ou écrivez-nous sur contact@yoga-rires.fr'
+details: 'Pour toute information supplémentaire, rdv sur rires-eveilles.fr ou écrivez-nous sur contact@rires-eveilles.fr'
 id-name: barbara
 adresse: 1, rue Fleury, 75018 Paris
 booking: true
