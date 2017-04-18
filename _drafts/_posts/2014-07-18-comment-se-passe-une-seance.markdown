@@ -2,9 +2,13 @@
 title: Comment se passe une séance de yoga du rire ?
 subtitle: Website Design
 img: img/yoga1.jpg
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo
+  novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo
+  diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
 comments: true
-
+date: '2014-07-18T00:00:00.000+00:00'
+layout: post
+blog: true
 ---
 
 
