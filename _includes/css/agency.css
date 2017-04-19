@@ -1350,8 +1350,13 @@ padding: 15px 5px 5px 5px;
 .blog h1 {
   font-size: 50px;
 }
+@media(max-width: 768px){
+  .blog h1 {
+    font-size: 40px;
+  }
+}
 .blog h2 {
-  font-size: 32px;
+  font-size: 30px;
   transition: 0.2s all ease;
 }
 @media(min-width: 992px){
@@ -1439,7 +1444,14 @@ nav {
 .container-post h2 {
   font-family: {{ site.data.template.font.secondary }};
   font-weight: 500;
-  font-size: 30px;
+  font-size: 28px;
+  line-height: 36px;
+}
+@media (max-width: 768px) {
+  .container-post h2  {
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
 .post h2 {
   font-size: 28px;
