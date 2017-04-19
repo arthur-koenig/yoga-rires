@@ -55,9 +55,7 @@ Si vous venez de loin :
 
 * Approvisionnement pour les pique-niques à proximité.
 
-
-
-
+<br>
 
 
 **Tarif :** 80€ TTC
@@ -72,7 +70,7 @@ Si vous venez de loin :
 **Contacts :**
 
 
-<span style="font-size: 1rem;">Geneviève Savatier 06 70 57 15 59 genevieve.savatier@gmail.com ,</span>
+Geneviève Savatier 06 70 57 15 59 genevieve.savatier@gmail.com
 
 
 Mylène Koenig 06 73 13 84 16 mylene.koenig@gmail.com
