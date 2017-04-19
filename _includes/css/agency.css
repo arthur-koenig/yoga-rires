@@ -113,7 +113,12 @@ h6 {
 .navbar {
   margin-bottom: 0;
 }
-
+.navbar-default .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
 .navbar-default .navbar-brand {
     color: white;
     font-family: {{ site.data.template.font.primary }};
@@ -202,18 +207,6 @@ h6 {
         -webkit-transition: padding .2s;
         -moz-transition: padding .2s;
         transition: padding .2s;
-    }
-    .navbar-default .navbar-brand:hover,
-    .navbar-default .navbar-brand:focus,
-    .navbar-default .navbar-brand:active,
-    .navbar-default .navbar-brand.active {
-    }
-
-    .navbar-default .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all .2s;
-        -moz-transition: all .2s;
-        transition: all .2s;
     }
 
     .navbar-default .navbar-nav>.active>a {
