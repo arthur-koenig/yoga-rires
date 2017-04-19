@@ -1352,7 +1352,6 @@ padding: 15px 5px 5px 5px;
 }
 .blog h2 {
   font-size: 32px;
-  line-height: 28px;
   transition: 0.2s all ease;
 }
 @media(min-width: 992px){
