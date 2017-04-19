@@ -27,7 +27,6 @@ En co-animation :
 * Mylène Koenig, coach certifiée CIC coaching individuel et de groupe, formatrice en communication et animatrice de yoga du rire. Mylène anime habituellement ses ateliers à Paris et ponctuellement là où l’appelle le vent de l’amitié.
 
 
-
 ## Détails
 
 
@@ -58,16 +57,20 @@ Si vous venez de loin :
 
 
 
+
+
+
 **Tarif :** 80€ TTC
 
+
 **Dates :** vendredi 30 juin, de 19h à 22h30 et samedi 1er juillet, de 9H30 à 18h
+
 
 **Lieu :** (à 10’ de Genève) Atelier "Naître à la terre", 15 chemin des Belosses 74100 Ambilly
 
 
-
-
 **Contacts :**
+
 
 <span style="font-size: 1rem;">Geneviève Savatier 06 70 57 15 59 genevieve.savatier@gmail.com ,</span>
 
