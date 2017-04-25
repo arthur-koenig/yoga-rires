@@ -51,9 +51,9 @@ Vous serez chaleureusement accueillis  dans un lieu magnifique et spacieux et u
 Si vous venez de loin :
 
 
-* Hébergement possible à Ambilly chez Geneviève Savatier pour les premiers inscrits
+* Hébergement possible à Ambilly chez Geneviève Savatier pour les premiers inscrits.
 
-* Approvisionnement pour les pique-niques à proximité
+* Approvisionnement pour les pique-niques à proximité.
 
 
 **Tarif :** 80€ TTC
