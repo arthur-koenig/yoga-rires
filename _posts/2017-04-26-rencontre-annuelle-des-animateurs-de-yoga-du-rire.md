@@ -6,13 +6,13 @@ description: 'Chaque année, les animateurs de yoga du rire formés par l''Insti
   français du yoga du rire ont la possibilité de se retrouver pour une journée d''actualisation.
   Super prétexte pour rire mais aussi pour échanger nos trucs, nos astuces, nos expériences
   et nos réflexions très sérieuses ! '
-img: "/img/P4221778.JPG"
+img: "img/P4221778.JPG"
 comments: true
 date: 2017-04-25 19:54
 ---
 
 
-![](/img/P4221764-1.jpg)
+![](/img/P4221764.jpg)
 
 
 
@@ -30,5 +30,4 @@ Bilan de cette journée de folie : le top 50 des nouveaux rires de 2017, que j'a
 
 
 
-![](img/capture-ecran.jpg)
-
+![](/img/capture-ecran.jpg)
