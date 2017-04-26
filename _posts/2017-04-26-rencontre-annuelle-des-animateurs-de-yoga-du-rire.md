@@ -26,7 +26,7 @@ Samedi 22 avril, neuf heures trente pétantes :  une ribambelle de rieurs levé
 Je n'arrive pas seule : devant la gare de Lyon Part Dieu, parmi les voyageurs qui attendent le tram n°1, j'ai repéré LA voyageuse qui se rend au même endroit que moi. Quelque chose dans l'allure, dans le sourire, dans les yeux me le dit... BINGO ! Nous nous regardons sans nous connaître et... éclatons de rire ! A croire que la pratique du yoga du rire crée une connivence impalpable mais bien réelle !
 
 
-Bilan de cette journée de folie : le top 50 des nouveaux rires de 2017, que j'ai hâte de vous faire découvrir !![](/img/P4221778.JPG)
+Bilan de cette journée de folie : le top 50 des nouveaux rires de 2017, que j'ai hâte de vous faire découvrir !![](/img/P4221750.JPG)
 
 
 
