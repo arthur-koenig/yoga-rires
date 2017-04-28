@@ -16,7 +16,7 @@ Retrouvons notre âme d’enfant, expérimentons, rions, jouons, créons !
 Nous connecter à nos ressources naturelles, booster notre créativité, faire bondir notre degré de bonheur : cet atelier marie techniques de création, yoga du rire et quelques outils de psychologie positive et d'intelligence émotionnelle soigneusement choisis pour vous.
 
 
-Un moment privilégié où nous créerons et retrouverons notre joie et notre simplicité d’enfant pour les harmoniser à l’adulte que nous sommes. Une grande respiration et quelques tours de magie pour mieux vous préparer à faire de cet été un festival de petits et grands bonheurs.
+Un moment privilégié où nous créerons et retrouverons notre joie et notre simplicité d’enfant pour les harmoniser à l’adulte que nous sommes. Une grande respiration et quelques tours de magie pour mieux cultiver le positif en nous, arroser et faire grandir nos graines de bonheur et nous préparer à faire de cet été un moment vraiment magique.
 
 
 En co-animation :
