@@ -43,6 +43,7 @@ Si vous venez de loin :
 * Hébergement possible à Ambilly chez Geneviève Savatier pour les premiers inscrits.
 
 * Approvisionnement pour les pique-niques à proximité.
+* Par le train, vous arrivez à la gare d'Annemasse
 
 **Tarif :** 80€ TTC
 
