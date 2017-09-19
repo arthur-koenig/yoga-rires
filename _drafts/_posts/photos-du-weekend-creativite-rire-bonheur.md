@@ -11,7 +11,7 @@ description: 'Deux jours de liberté où nous nous sommes lâchés ! Nous avons 
   d''idées drôles et folles ! '
 img: img/visuelcrea.jpg
 layout: post
-title: Photos du weekend créativité, rire & bonheur 30 juin-1er Juillet
+title: Photos du weekend créativité, rire & bonheur 30 juin-1er Juillet 2017
 ---
 
 
