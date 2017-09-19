@@ -1,0 +1,48 @@
+---
+pages:
+- _posts/2017-04-18-weekend-creativite-rire-et-bonheur.md
+- _posts/2017-04-26-rencontre-annuelle-des-animateurs-de-yoga-du-rire.md
+hide_body: false
+fields:
+- name: title
+  label: Titre
+  type: text
+  hidden: false
+  default: ''
+  description: Titre complet de cet article
+  config:
+    required: true
+- name: img
+  label: Image
+  type: file
+  hidden: false
+  default: ''
+  description: L'image de garde de cet article
+- name: description
+  label: Description
+  type: textarea
+  hidden: false
+  default: ''
+  description: Description / Extrait / Résumé de cet article
+- name: comments
+  label: Commentaires
+  type: boolean
+  hidden: false
+  default: ''
+  description: Activer ou non les commentaires pour cet article
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: post
+- name: blog
+  label: Blog
+  type: boolean
+  hidden: false
+  default: true
+  description: Toujours activer

@@ -1,0 +1,90 @@
+---
+pages:
+- _cours/barbara.md
+- _cours/maison-verte.md
+hide_body: false
+fields:
+- name: background-color
+  label: Couleur d'arrière plan
+  type: text
+  hidden: false
+  default: ''
+  description: 'format hexadécimal, exemple: #FA1FA1'
+- name: title
+  label: Titre
+  type: text
+  hidden: false
+  default: ''
+  description: 'Titre de ce cours. Ex: Cous au centre Barbara'
+- name: title-google
+  label: Titre pour Google
+  type: text
+  hidden: false
+  default: ''
+  description: 'Ajouter "Yoga du rire" avant le titre. Ex: Yoga du rire au centre
+    Barbara'
+- name: moment
+  label: Date(s) du cours
+  type: text
+  hidden: false
+  default: ''
+  description: 'Préciser les dates pour ce cours. Ex: tous les vendredis'
+- name: heure
+  label: Heure du cours
+  type: text
+  hidden: false
+  default: ''
+  description: 'Ex: de 9:30 à 10:30'
+- name: heure-google-depart
+  label: Heure pour Google
+  type: text
+  hidden: false
+  default: ''
+  description: pour 16:30 écrire T163000 pour 9:00 écrire T090000
+- name: heure-google-fin
+  label: Heure de fin pour google
+  type: text
+  hidden: false
+  default: ''
+  description: pour 17:30 écrire T173000 pour 08:00 écrire T080000
+- name: details
+  label: Details supplémentaires
+  type: textarea
+  hidden: false
+  default: ''
+  description: 'Ex: "Pour toute information supplémentaire, rdv sur rires-eveilles.fr
+    ou écrivez-nous sur contact@rires-eveilles.fr"'
+- name: id-name
+  label: Id name
+  type: text
+  hidden: true
+  default: ''
+- name: adresse
+  label: Adresse
+  type: text
+  hidden: false
+  default: ''
+  description: Adresse où se déroule ce cours
+- name: booking
+  label: 'Activer l''inscription '
+  type: boolean
+  hidden: false
+  default: ''
+  description: Activer ou désactiver la possibilité d'inscription à ce cours
+- name: prix-libre
+  label: Prix libre ?
+  type: boolean
+  hidden: false
+  default: ''
+  description: Activer si le cours est à prix libre
+- name: prix-options
+  label: Prix options
+  type: list
+  hidden: false
+  default: ''
+  description: Liste des prix pour ce cours
+- name: date
+  label: Date
+  type: datetime
+  hidden: true
+  default: ''
