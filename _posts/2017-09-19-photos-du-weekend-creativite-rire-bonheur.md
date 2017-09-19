@@ -6,9 +6,10 @@ description: 'Deux jours de liberté où nous nous sommes lâchés ! Nous avons 
   le plaisir de créer ensemble, de nous abandonner à l''inspiration de l''instant
   et de nous laisser surprendre par ce qui jaillit ! Nous avons ri, nous avons écouté
   nos corps et nos coeurs, contemplé, savouré des instants paisibles, des instants
-  hilarants, des instants magiques... Deux jours qui nous ont donné envie de recommencer
-  ! Merci à ma complice Geneviève pour sa co-animation chaleureuse, généreuse, pleine
-  d''idées drôles et folles ! '
+  hilarants, des instants magiques...  Merci à ma complice Geneviève pour sa présence
+  et sa co-animation chaleureuse, efficace, riche d''idées drôles et folles ! Merci
+  aux participants qui se sont lancés dans l''aventure avec audace, enthousiasme et
+  générosité ! '
 img: img/visuelcrea.jpg
 layout: post
 title: Photos du weekend créativité, rire & bonheur 30 juin-1er Juillet 2017
