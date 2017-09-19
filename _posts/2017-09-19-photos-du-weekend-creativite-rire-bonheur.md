@@ -1,6 +1,6 @@
 ---
 blog: true
-comments: false
+comments: true
 date: 2017-09-20 00:23:49 +0200
 description: 'Deux jours de liberté où nous nous sommes lâchés ! Nous avons découvert
   le plaisir de créer ensemble, de nous abandonner à l''inspiration de l''instant
