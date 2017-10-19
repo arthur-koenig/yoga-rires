@@ -7,5 +7,5 @@ description: |-
    Pour voir l'émission en replay : http://www.lcp.fr/emissions/etat-de-sante/284886-etat-de-sante
 img: img/ÉTAT DE SANTÉ - Le rire médecin ? | LCP Assemblée nationale.html
 layout: post
-title: Le rire médecin
+title: Super reportage sur le rire
 ---
