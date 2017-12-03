@@ -1,7 +1,7 @@
 ---
 pages:
-- _cours/barbara.md
 - _cours/maison-verte.md
+- _cours/barbara.md
 hide_body: false
 fields:
 - name: background-color
