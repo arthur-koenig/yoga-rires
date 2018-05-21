@@ -1,8 +1,6 @@
 ---
-pages:
-- _cours/maison-verte.md
-- _cours/barbara.md
 hide_body: false
+is_partial: false
 fields:
 - name: background-color
   label: Couleur d'arrière plan
@@ -88,3 +86,6 @@ fields:
   type: datetime
   hidden: true
   default: ''
+pages:
+- _cours/maison-verte.md
+- _cours/barbara.md

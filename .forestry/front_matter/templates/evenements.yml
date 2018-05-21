@@ -1,7 +1,6 @@
 ---
-pages:
-- _evenements/yoga-du-rire-au-salon-zen-a-paris.md
 hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Titre
@@ -46,3 +45,5 @@ fields:
   default: ''
   description: url externe. Par exemple, lien vers la page de cet événement
 - type: boolean
+pages:
+- _evenements/yoga-du-rire-au-salon-zen-a-paris.md
