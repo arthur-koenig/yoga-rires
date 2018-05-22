@@ -7,6 +7,9 @@ function validEmail(email) { // see:
   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
   return re.test(email);
 }
+if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
+  return false;
+}
 // get all data in form and return object
 function getFormData(form) {
   var elements = form.elements; // all form elements

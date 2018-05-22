@@ -1513,3 +1513,6 @@ nav {
   margin-top: -30px;
   margin-bottom: 30px;
 }
+#honeypot {
+  display: none; /*makes the field not visible to humans*/
+}

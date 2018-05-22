@@ -1,5 +1,8 @@
 <form action="https://script.google.com/macros/s/AKfycbz5G3a8IWYNv9llnLjui-xntp2-lItoGYXUzBVFZK9lYiDSm9NU/exec" method="post" class="gform resa" id={{cour.title | replace: " ","-"}}>
 
+  <label class="sr-only"></label>
+  <input id="honeypot" type="text" name="honeypot" value="" />
+
      <fieldset class="form-group">
        <label>Nom*</label>
        <input type="text" class="form-control" placeholder="Prénom et nom de famille" name="name" required oninvalid="this.setCustomValidity('Merci de préciser votre nom')" oninput="setCustomValidity('')">
