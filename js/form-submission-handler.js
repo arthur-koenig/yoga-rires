@@ -102,6 +102,10 @@ function loaded() {
 //  forms.addEventListener("submit", handleFormSubmit, false);
 };
 
+if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
+  return false;
+}
+
 
 
 document.addEventListener('DOMContentLoaded', loaded, false);
