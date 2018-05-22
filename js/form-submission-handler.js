@@ -85,7 +85,7 @@ function handleFormSubmit(event) {
     xhr.send(encoded);
   }
 }
-//if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted return false; }//
+
 function loaded() {
 //  console.log('contact form submission handler loaded successfully');
   // bind to the submit event of our form
