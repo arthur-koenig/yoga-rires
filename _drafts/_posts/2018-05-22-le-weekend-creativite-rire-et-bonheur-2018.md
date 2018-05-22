@@ -1,7 +1,7 @@
 ---
 layout: post
 blog: true
-title: LE WEEKEND CRÉATIVITÉ, RIRE ET BONHEUR 2018
+title: LE WEEKEND CRÉATIVITÉ, RIRE ET BONHEUR 26-27 Mai 2018
 description: "\nLe weekend de juin 2017 dédié aux rires et à la créativité vous avait
   tous ravis ! Avec ma complice Geneviève Savatier, la tentation de renouveler l'expérience,
   avec d'autres idées encore, d'autres inventions, d'autres rires, d'autres folies
