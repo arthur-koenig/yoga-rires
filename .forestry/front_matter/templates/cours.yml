@@ -1,6 +1,6 @@
 ---
+label: cours
 hide_body: false
-is_partial: false
 fields:
 - name: background-color
   label: Couleur d'arrière plan
