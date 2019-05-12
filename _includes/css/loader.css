@@ -1,4 +1,4 @@
-.loader {
+/*.loader {
   width: 40px;
   height: 40px;
   background-color: #{{site.data.template.color.fifth}};
@@ -26,3 +26,4 @@
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
+*/
