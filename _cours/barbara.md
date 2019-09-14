@@ -19,6 +19,5 @@ prix-options:
 - 80€ Carte de 10 séances
 - "-15% demandeur d'emploi"
 date: 2017-05-28T14:15:30.000+00:00
-published: false
 
 ---
