@@ -2,10 +2,10 @@
 background-color: 40c3bd
 title: Cours au centre Barbara
 title-google: Yoga du rire au centre Barbara
-moment: Les vendredis
-heure: de 13:00 à 14:00
-heure-google-depart: T123000
-heure-google-fin: T133000
+moment: Les mardis
+heure: de 12:00 à 13:00
+heure-google-depart: T120000
+heure-google-fin: T130000
 details: Pour toute information supplémentaire, rdv sur rires-eveilles.fr ou écrivez-nous
   sur contact@rires-eveilles.fr
 id-name: barbara
@@ -18,5 +18,7 @@ prix-options:
 - 45€ Carte de 5 séances
 - 80€ Carte de 10 séances
 - "-15% demandeur d'emploi"
-date: 2017-05-28 14:15:30 +0000
+date: 2017-05-28T14:15:30.000+00:00
+published: false
+
 ---
